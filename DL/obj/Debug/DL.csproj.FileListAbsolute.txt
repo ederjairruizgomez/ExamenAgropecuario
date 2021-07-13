@@ -1,0 +1,22 @@
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\bin\Debug\DL.dll.config
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\bin\Debug\DL.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\bin\Debug\DL.pdb
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\bin\Debug\EntityFramework.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\bin\Debug\EntityFramework.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\obj\Debug\DL.csproj.AssemblyReference.cache
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\obj\Debug\DL.csproj.CopyComplete
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\obj\Debug\DL.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\DL\obj\Debug\DL.pdb
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\DL\bin\Debug\DL.dll.config
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\DL\bin\Debug\DL.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\DL\bin\Debug\DL.pdb
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\DL\bin\Debug\EntityFramework.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\DL\bin\Debug\EntityFramework.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\DL\obj\Debug\DL.csprojResolveAssemblyReference.cache
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\DL\obj\Debug\DL.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\DL\obj\Debug\DL.pdb

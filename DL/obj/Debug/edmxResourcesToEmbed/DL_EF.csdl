@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ERuizAgropecuarioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Contraseña" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="RFC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UsuarioEstado">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdEstado" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="ERuizAgropecuarioEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
+    <EntitySet Name="UsuarioEstadoes" EntityType="Self.UsuarioEstado" />
+    <FunctionImport Name="EstadoAdd">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Abreviacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="EstadoDelete">
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EstadoGetAll" ReturnType="Collection(ERuizAgropecuarioModel.EstadoGetAll_Result)" />
+    <FunctionImport Name="EstadoGetById" ReturnType="Collection(ERuizAgropecuarioModel.EstadoGetById_Result)">
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EstadoUpdate">
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Abreviacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Usuario1Update">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+      <Parameter Name="Contraseña" Mode="In" Type="String" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="FechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="RFC" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UsuarioAdd">
+      <Parameter Name="Contraseña" Mode="In" Type="String" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="FechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="RFC" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UsuarioDelete">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UsuarioEstadoAdd">
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UsuarioEstadoDelete">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UsuarioEstadoGetAll" ReturnType="Collection(ERuizAgropecuarioModel.UsuarioEstadoGetAll_Result)" />
+    <FunctionImport Name="UsuarioEstadoGetById" ReturnType="Collection(ERuizAgropecuarioModel.UsuarioEstadoGetById_Result)">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UsuarioEstadoUpdate">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UsuarioGetAll" ReturnType="Collection(ERuizAgropecuarioModel.UsuarioGetAll_Result)" />
+    <FunctionImport Name="UsuarioGetById" ReturnType="Collection(ERuizAgropecuarioModel.UsuarioGetById_Result)">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="Estadoes" EntityType="ERuizAgropecuarioModel.Estado" />
+    <EntitySet Name="GeoReferencias" EntityType="ERuizAgropecuarioModel.GeoReferencia" />
+    <AssociationSet Name="FK__GeoRefere__IdEst__36B12243" Association="ERuizAgropecuarioModel.FK__GeoRefere__IdEst__36B12243">
+      <End Role="Estado" EntitySet="Estadoes" />
+      <End Role="GeoReferencia" EntitySet="GeoReferencias" />
+    </AssociationSet>
+    <FunctionImport Name="GeoReferenciaAdd">
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+      <Parameter Name="Latitud" Mode="In" Type="Decimal" />
+      <Parameter Name="Longitud" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GeoReferenciaDelete">
+      <Parameter Name="IdGeoReferencia" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GeoReferenciaGetAll" ReturnType="Collection(ERuizAgropecuarioModel.GeoReferenciaGetAll_Result)" />
+    <FunctionImport Name="GeoReferenciaGetById" ReturnType="Collection(ERuizAgropecuarioModel.GeoReferenciaGetById_Result)">
+      <Parameter Name="IdGeoReferencia" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GeoReferenciaUpdate">
+      <Parameter Name="IdGeoReferencia" Mode="In" Type="Int32" />
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+      <Parameter Name="Latitud" Mode="In" Type="Decimal" />
+      <Parameter Name="Longitud" Mode="In" Type="Decimal" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="EstadoGetAll_Result">
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Abreviacion" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="EstadoGetById_Result">
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Abreviacion" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="UsuarioEstadoGetAll_Result">
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="UsuarioEstadoGetById_Result">
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="UsuarioGetAll_Result">
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="String" Name="Contraseña" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaNacimiento" Nullable="true" />
+    <Property Type="String" Name="RFC" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="UsuarioGetById_Result">
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="String" Name="Contraseña" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaNacimiento" Nullable="true" />
+    <Property Type="String" Name="RFC" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="Estado">
+    <Key>
+      <PropertyRef Name="IdEstado" />
+    </Key>
+    <Property Name="IdEstado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Abreviacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GeoReferencias" Relationship="ERuizAgropecuarioModel.FK__GeoRefere__IdEst__36B12243" FromRole="Estado" ToRole="GeoReferencia" />
+  </EntityType>
+  <EntityType Name="GeoReferencia">
+    <Key>
+      <PropertyRef Name="IdGeoReferencia" />
+    </Key>
+    <Property Name="IdGeoReferencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdEstado" Type="Int32" />
+    <Property Name="Latitud" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="Longitud" Type="Decimal" Precision="18" Scale="10" />
+    <NavigationProperty Name="Estado" Relationship="ERuizAgropecuarioModel.FK__GeoRefere__IdEst__36B12243" FromRole="GeoReferencia" ToRole="Estado" />
+  </EntityType>
+  <Association Name="FK__GeoRefere__IdEst__36B12243">
+    <End Type="ERuizAgropecuarioModel.Estado" Role="Estado" Multiplicity="0..1" />
+    <End Type="ERuizAgropecuarioModel.GeoReferencia" Role="GeoReferencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="GeoReferencia">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="GeoReferenciaGetAll_Result">
+    <Property Type="Int32" Name="IdGeoReferencia" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="true" />
+    <Property Type="Decimal" Name="Latitud" Nullable="true" Precision="18" Scale="10" />
+    <Property Type="Decimal" Name="Longitud" Nullable="true" Precision="18" Scale="10" />
+  </ComplexType>
+  <ComplexType Name="GeoReferenciaGetById_Result">
+    <Property Type="Int32" Name="IdGeoReferencia" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="true" />
+    <Property Type="Decimal" Name="Latitud" Nullable="true" Precision="18" Scale="10" />
+    <Property Type="Decimal" Name="Longitud" Nullable="true" Precision="18" Scale="10" />
+  </ComplexType>
+</Schema>

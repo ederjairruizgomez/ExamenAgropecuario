@@ -1,0 +1,54 @@
+﻿@model ML.GeoReferencias
+@{
+    ViewBag.Title = "Mapa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <title>Maps</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/estilo.css">
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            iniciarMap();
+        });
+        function iniciarMap() {
+            $.ajax({
+                type: 'GET',
+                url: 'https://localhost:44311/api/GeoReferencia', // '@Url.Action("GetAll", "GeoReferencia")',
+                success: function (result) {//200 OK
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 2,
+                        center: { lat: 26.79603778489697 ,  lng: -103.43819326139969 }
+                    });
+                    $.each(result.Objects, function (i, GeoReferencia) {
+                        var coord = { lat: GeoReferencia.Latitud, lng: GeoReferencia.Longitud };
+                        var marker = new google.maps.Marker({
+                            position: coord,
+                            map: map
+                        });
+                    });
+
+                },
+
+                error: function (result) {
+                    alert('Error en la consulta.' + result.responseJSON);
+                }
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSKBDdPPlfca_zTwyxKiicRQn1qfgRjLw"></script>
+    @using (Html.BeginForm("GetAll", "GeoReferencia", FormMethod.Get, new { enctype = "multipart/form-data" }))
+    {
+        <div class="form-group">
+            <div class="col-md-2">
+                <input type="submit" value="Ver Tabla" class="btn btn-success" />
+            </div>
+        </div>
+    }
+</body>

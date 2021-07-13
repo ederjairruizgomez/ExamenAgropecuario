@@ -1,0 +1,11 @@
+C:\Users\Eder Jair\source\repos\ERuizExamen\ML\bin\Debug\ML.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\ML\bin\Debug\ML.pdb
+C:\Users\Eder Jair\source\repos\ERuizExamen\ML\obj\Debug\ML.csproj.AssemblyReference.cache
+C:\Users\Eder Jair\source\repos\ERuizExamen\ML\obj\Debug\ML.csproj.CoreCompileInputs.cache
+C:\Users\Eder Jair\source\repos\ERuizExamen\ML\obj\Debug\ML.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\ML\obj\Debug\ML.pdb
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\ML\bin\Debug\ML.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\ML\bin\Debug\ML.pdb
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\ML\obj\Debug\ML.csprojResolveAssemblyReference.cache
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\ML\obj\Debug\ML.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\ML\obj\Debug\ML.pdb

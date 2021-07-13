@@ -1,0 +1,49 @@
+﻿@model ML.GeoReferencias
+@{
+    ViewBag.Title = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GetAll</h2>
+<div class="container">
+    <div class="row">
+        <div style="float:right; margin-bottom:1rem; margin-top:15px;">
+            @Html.ActionLink("+", "Form", "GeoReferencia", htmlAttributes: new { @class = "btn btn-success" })
+        </div>
+        @using (Html.BeginForm("Mapa1", "GeoReferencia", FormMethod.Get, new { enctype = "multipart/form-data" }))
+        {
+            <div class="form-group">
+                <div class="col-md-2" style="float:left; margin-bottom:1rem; margin-left:-12px;">
+                    @Html.ActionLink("Ver Mapa", "Mapa", "GeoReferencia", htmlAttributes: new { @class = "btn btn-success" })
+                </div>
+            </div>
+        }
+        <table class="table table-bordered table-responsive">
+            <thead>
+                <tr>
+                    <td>Editar</td>
+                    <td class="hidden">IdGeoReferencia</td>
+                    <td class="hidden">IdEstado</td>
+                    <td>Latitud</td>
+                    <td>Longitud</td>
+                    <td>Eliminar</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (ML.GeoReferencias geoReferencia in Model.geoReferencias)
+                {
+                <tr>
+                    <td><a class="btn btn-warning glyphicon glyphicon-edit" href="@Url.Action("Form", "GeoReferencia", new { IdGeoReferencia = geoReferencia.IdGeoReferencia})"></a></td>
+                    <td class="hidden">@geoReferencia.IdGeoReferencia</td>
+                    <td class="hidden">@geoReferencia.Estado.IdEstado</td>
+                    <td>@geoReferencia.Latitud</td>
+                    <td>@geoReferencia.Longitud</td>
+
+                    <td><a class="btn btn-danger glyphicon glyphicon-trash" href="@Url.Action("Delete", "GeoReferencia", new { IdGeoReferencia = geoReferencia.IdGeoReferencia})" onclick="return confirm('Estas seguro que deseas eliminar este registro?');" ;></a></td>
+                </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>

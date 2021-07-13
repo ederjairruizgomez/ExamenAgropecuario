@@ -1,0 +1,164 @@
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\SL.dll.config
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\SL.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\SL.pdb
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\csc.exe
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\csc.exe.config
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\csc.rsp
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\csi.exe
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\csi.rsp
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\System.AppContext.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\vbc.exe
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\vbc.exe.config
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\vbc.rsp
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\VBCSCompiler.exe
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\Antlr3.Runtime.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\BL.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\EntityFramework.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\EntityFramework.SqlServer.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\ML.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\Newtonsoft.Json.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Net.Http.Formatting.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Helpers.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Http.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Http.WebHost.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Mvc.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Optimization.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Razor.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.WebPages.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.WebPages.Razor.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\WebGrease.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\DL.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\BL.pdb
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\BL.dll.config
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\ML.pdb
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\EntityFramework.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\EntityFramework.SqlServer.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\Newtonsoft.Json.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Net.Http.Formatting.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Helpers.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Http.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Http.WebHost.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Mvc.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Optimization.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.Razor.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.WebPages.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\System.Web.WebPages.Razor.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\Antlr3.Runtime.pdb
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\DL.pdb
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\DL.dll.config
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\es\System.Web.Http.resources.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\es\System.Web.Razor.resources.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\obj\Debug\SL.csproj.AssemblyReference.cache
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\obj\Debug\SL.csproj.CoreCompileInputs.cache
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\obj\Debug\SL.csproj.CopyComplete
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\obj\Debug\SL.dll
+C:\Users\Eder Jair\source\repos\ERuizExamen\SL\obj\Debug\SL.pdb
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\SL.dll.config
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\SL.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\SL.pdb
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\csc.exe
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\csc.exe.config
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\csc.rsp
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\csi.exe
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\csi.rsp
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\System.AppContext.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\vbc.exe
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\vbc.exe.config
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\vbc.rsp
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\VBCSCompiler.exe
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\Antlr3.Runtime.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\BL.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\EntityFramework.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\EntityFramework.SqlServer.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\ML.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\Newtonsoft.Json.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Net.Http.Formatting.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Helpers.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Http.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Http.WebHost.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Mvc.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Optimization.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Razor.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.WebPages.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.WebPages.Razor.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\WebGrease.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\DL.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\BL.pdb
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\ML.pdb
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\EntityFramework.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\EntityFramework.SqlServer.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\Newtonsoft.Json.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Net.Http.Formatting.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Helpers.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Http.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Http.WebHost.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Mvc.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Optimization.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.Razor.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.WebPages.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\System.Web.WebPages.Razor.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\Antlr3.Runtime.pdb
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\DL.pdb
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\es\System.Web.Http.resources.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\es\System.Web.Razor.resources.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\obj\Debug\SL.csprojResolveAssemblyReference.cache
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\obj\Debug\SL.dll
+C:\Users\Alien4\Documents\Eder Jair Ruiz Gomez\ERuizExamen\SL\obj\Debug\SL.pdb

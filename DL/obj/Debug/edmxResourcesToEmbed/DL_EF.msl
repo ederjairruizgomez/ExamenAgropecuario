@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ERuizAgropecuarioModelStoreContainer" CdmEntityContainer="ERuizAgropecuarioEntities">
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="ERuizAgropecuarioModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsuarioEstadoes">
+      <EntityTypeMapping TypeName="ERuizAgropecuarioModel.UsuarioEstado">
+        <MappingFragment StoreEntitySet="UsuarioEstado">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="EstadoAdd" FunctionName="ERuizAgropecuarioModel.Store.EstadoAdd" />
+    <FunctionImportMapping FunctionImportName="EstadoDelete" FunctionName="ERuizAgropecuarioModel.Store.EstadoDelete" />
+    <FunctionImportMapping FunctionImportName="EstadoGetAll" FunctionName="ERuizAgropecuarioModel.Store.EstadoGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERuizAgropecuarioModel.EstadoGetAll_Result">
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Abreviacion" ColumnName="Abreviacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EstadoGetById" FunctionName="ERuizAgropecuarioModel.Store.EstadoGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERuizAgropecuarioModel.EstadoGetById_Result">
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Abreviacion" ColumnName="Abreviacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EstadoUpdate" FunctionName="ERuizAgropecuarioModel.Store.EstadoUpdate" />
+    <FunctionImportMapping FunctionImportName="Usuario1Update" FunctionName="ERuizAgropecuarioModel.Store.Usuario1Update" />
+    <FunctionImportMapping FunctionImportName="UsuarioAdd" FunctionName="ERuizAgropecuarioModel.Store.UsuarioAdd" />
+    <FunctionImportMapping FunctionImportName="UsuarioDelete" FunctionName="ERuizAgropecuarioModel.Store.UsuarioDelete" />
+    <FunctionImportMapping FunctionImportName="UsuarioEstadoAdd" FunctionName="ERuizAgropecuarioModel.Store.UsuarioEstadoAdd" />
+    <FunctionImportMapping FunctionImportName="UsuarioEstadoDelete" FunctionName="ERuizAgropecuarioModel.Store.UsuarioEstadoDelete" />
+    <FunctionImportMapping FunctionImportName="UsuarioEstadoGetAll" FunctionName="ERuizAgropecuarioModel.Store.UsuarioEstadoGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERuizAgropecuarioModel.UsuarioEstadoGetAll_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UsuarioEstadoGetById" FunctionName="ERuizAgropecuarioModel.Store.UsuarioEstadoGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERuizAgropecuarioModel.UsuarioEstadoGetById_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UsuarioEstadoUpdate" FunctionName="ERuizAgropecuarioModel.Store.UsuarioEstadoUpdate" />
+    <FunctionImportMapping FunctionImportName="UsuarioGetAll" FunctionName="ERuizAgropecuarioModel.Store.UsuarioGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERuizAgropecuarioModel.UsuarioGetAll_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UsuarioGetById" FunctionName="ERuizAgropecuarioModel.Store.UsuarioGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERuizAgropecuarioModel.UsuarioGetById_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Estadoes">
+      <EntityTypeMapping TypeName="ERuizAgropecuarioModel.Estado">
+        <MappingFragment StoreEntitySet="Estado">
+          <ScalarProperty Name="Abreviacion" ColumnName="Abreviacion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeoReferencias">
+      <EntityTypeMapping TypeName="ERuizAgropecuarioModel.GeoReferencia">
+        <MappingFragment StoreEntitySet="GeoReferencia">
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="IdGeoReferencia" ColumnName="IdGeoReferencia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GeoReferenciaAdd" FunctionName="ERuizAgropecuarioModel.Store.GeoReferenciaAdd" />
+    <FunctionImportMapping FunctionImportName="GeoReferenciaDelete" FunctionName="ERuizAgropecuarioModel.Store.GeoReferenciaDelete" />
+    <FunctionImportMapping FunctionImportName="GeoReferenciaGetAll" FunctionName="ERuizAgropecuarioModel.Store.GeoReferenciaGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERuizAgropecuarioModel.GeoReferenciaGetAll_Result">
+          <ScalarProperty Name="IdGeoReferencia" ColumnName="IdGeoReferencia" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GeoReferenciaGetById" FunctionName="ERuizAgropecuarioModel.Store.GeoReferenciaGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERuizAgropecuarioModel.GeoReferenciaGetById_Result">
+          <ScalarProperty Name="IdGeoReferencia" ColumnName="IdGeoReferencia" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GeoReferenciaUpdate" FunctionName="ERuizAgropecuarioModel.Store.GeoReferenciaUpdate" />
+  </EntityContainerMapping>
+</Mapping>

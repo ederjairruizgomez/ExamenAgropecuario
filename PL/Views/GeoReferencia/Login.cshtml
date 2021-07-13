@@ -1,0 +1,36 @@
+﻿@model ML.Usuario
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+<div class="container">
+
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+    <div class="row">
+            @using (Html.BeginForm("Mapa1", "GeoReferencia", FormMethod.Get))
+            {
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.IdUsuario)
+                            @Html.TextBoxFor(model => model.IdUsuario, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.IdUsuario)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <input type="submit" value="Enviar" class="btn btn-success"/>
+                        </div>
+                    </div>
+                </div>
+            }
+    </div>
+</div>
+

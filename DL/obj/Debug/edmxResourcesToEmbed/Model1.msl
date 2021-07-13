@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EderModelStoreContainer" CdmEntityContainer="EderEntities">
+    <EntitySetMapping Name="Estadoes">
+      <EntityTypeMapping TypeName="EderModel.Estado">
+        <MappingFragment StoreEntitySet="Estado">
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Abreviacion" ColumnName="Abreviacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeoReferencias">
+      <EntityTypeMapping TypeName="EderModel.GeoReferencia">
+        <MappingFragment StoreEntitySet="GeoReferencia">
+          <ScalarProperty Name="IdGeoReferencia" ColumnName="IdGeoReferencia" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="EderModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario1">
+      <EntityTypeMapping TypeName="EderModel.Usuario1">
+        <MappingFragment StoreEntitySet="Usuario1">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsuarioEstadoes">
+      <EntityTypeMapping TypeName="EderModel.UsuarioEstado">
+        <MappingFragment StoreEntitySet="UsuarioEstado">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="EstadoAdd" FunctionName="EderModel.Store.EstadoAdd" />
+    <FunctionImportMapping FunctionImportName="EstadoDelete" FunctionName="EderModel.Store.EstadoDelete" />
+    <FunctionImportMapping FunctionImportName="EstadoGetAll" FunctionName="EderModel.Store.EstadoGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EderModel.EstadoGetAll_Result">
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Abreviacion" ColumnName="Abreviacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EstadoGetById" FunctionName="EderModel.Store.EstadoGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EderModel.EstadoGetById_Result">
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Abreviacion" ColumnName="Abreviacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EstadoUpdate" FunctionName="EderModel.Store.EstadoUpdate" />
+    <FunctionImportMapping FunctionImportName="GeoReferenciaAdd" FunctionName="EderModel.Store.GeoReferenciaAdd" />
+    <FunctionImportMapping FunctionImportName="GeoReferenciaDelete" FunctionName="EderModel.Store.GeoReferenciaDelete" />
+    <FunctionImportMapping FunctionImportName="GeoReferenciaGetAll" FunctionName="EderModel.Store.GeoReferenciaGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EderModel.GeoReferenciaGetAll_Result">
+          <ScalarProperty Name="IdGeoReferencia" ColumnName="IdGeoReferencia" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GeoReferenciaGetById" FunctionName="EderModel.Store.GeoReferenciaGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EderModel.GeoReferenciaGetById_Result">
+          <ScalarProperty Name="IdGeoReferencia" ColumnName="IdGeoReferencia" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GeoReferenciaUpdate" FunctionName="EderModel.Store.GeoReferenciaUpdate" />
+    <FunctionImportMapping FunctionImportName="Usuario1Add" FunctionName="EderModel.Store.Usuario1Add" />
+    <FunctionImportMapping FunctionImportName="Usuario1Delete" FunctionName="EderModel.Store.Usuario1Delete" />
+    <FunctionImportMapping FunctionImportName="Usuario1GetAll" FunctionName="EderModel.Store.Usuario1GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EderModel.Usuario1GetAll_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Usuario1GetById" FunctionName="EderModel.Store.Usuario1GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EderModel.Usuario1GetById_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Usuario1Update" FunctionName="EderModel.Store.Usuario1Update" />
+    <FunctionImportMapping FunctionImportName="UsuarioAdd" FunctionName="EderModel.Store.UsuarioAdd" />
+    <FunctionImportMapping FunctionImportName="UsuarioDelete" FunctionName="EderModel.Store.UsuarioDelete" />
+    <FunctionImportMapping FunctionImportName="UsuarioEstadoAdd" FunctionName="EderModel.Store.UsuarioEstadoAdd" />
+    <FunctionImportMapping FunctionImportName="UsuarioEstadoDelete" FunctionName="EderModel.Store.UsuarioEstadoDelete" />
+    <FunctionImportMapping FunctionImportName="UsuarioEstadoGetAll" FunctionName="EderModel.Store.UsuarioEstadoGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EderModel.UsuarioEstadoGetAll_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UsuarioEstadoGetById" FunctionName="EderModel.Store.UsuarioEstadoGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EderModel.UsuarioEstadoGetById_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UsuarioEstadoUpdate" FunctionName="EderModel.Store.UsuarioEstadoUpdate" />
+    <FunctionImportMapping FunctionImportName="UsuarioGetAll" FunctionName="EderModel.Store.UsuarioGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EderModel.UsuarioGetAll_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UsuarioGetById" FunctionName="EderModel.Store.UsuarioGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EderModel.UsuarioGetById_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UsuarioUpdate" FunctionName="EderModel.Store.UsuarioUpdate" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,65 @@
+﻿@model ML.GeoReferencias
+@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>GeoReferencia</h2>
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+    <div class="row">
+        <div class="col-md-12">
+            @using (Html.BeginForm("Form", "GeoReferencia", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.IdGeoReferencia, new { @class = "hidden" })
+                            @Html.TextBoxFor(model => model.IdGeoReferencia, new { @class = "form-control hidden" })
+                            @Html.ValidationMessageFor(model => model.IdGeoReferencia)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.Estado.IdEstado, new { @class = "hidden" })
+                            @Html.TextBoxFor(model => model.Estado.IdEstado, new { @class = "form-control hidden" })
+                            @Html.ValidationMessageFor(model => model.Estado.IdEstado)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.Latitud)
+                            @Html.TextBoxFor(model => model.Latitud, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Latitud)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.Longitud)
+                            @Html.TextBoxFor(model => model.Longitud, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Longitud)
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <input type="submit" value="Guardar" class="btn btn-success" />
+                            @Html.ActionLink("Regresar", "GetAll", "GeoReferencia", htmlAttributes: new { @class = "btn btn-danger" })
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

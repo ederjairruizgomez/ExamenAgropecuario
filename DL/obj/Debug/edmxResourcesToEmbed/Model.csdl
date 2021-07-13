@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EderModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Estado">
+    <Key>
+      <PropertyRef Name="IdEstado" />
+    </Key>
+    <Property Name="IdEstado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Abreviacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GeoReferencias" Relationship="Self.FK__GeoRefere__IdEst__571DF1D5" FromRole="Estado" ToRole="GeoReferencia" />
+    <NavigationProperty Name="UsuarioEstadoes" Relationship="Self.FK__UsuarioEs__IdEst__5629CD9C" FromRole="Estado" ToRole="UsuarioEstado" />
+  </EntityType>
+  <EntityType Name="GeoReferencia">
+    <Key>
+      <PropertyRef Name="IdGeoReferencia" />
+    </Key>
+    <Property Name="IdGeoReferencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdEstado" Type="Int32" />
+    <Property Name="Latitud" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Longitud" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="Estado" Relationship="Self.FK__GeoRefere__IdEst__571DF1D5" FromRole="GeoReferencia" ToRole="Estado" />
+  </EntityType>
+  <EntityType Name="Usuario1">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Contraseña" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="RFC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UsuarioEstado" Relationship="Self.FK__UsuarioEs__IdUsu__5535A963" FromRole="Usuario1" ToRole="UsuarioEstado" />
+  </EntityType>
+  <EntityType Name="UsuarioEstado">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdEstado" Type="Int32" />
+    <NavigationProperty Name="Estado" Relationship="Self.FK__UsuarioEs__IdEst__5629CD9C" FromRole="UsuarioEstado" ToRole="Estado" />
+    <NavigationProperty Name="Usuario1" Relationship="Self.FK__UsuarioEs__IdUsu__5535A963" FromRole="UsuarioEstado" ToRole="Usuario1" />
+  </EntityType>
+  <Association Name="FK__GeoRefere__IdEst__571DF1D5">
+    <End Role="Estado" Type="Self.Estado" Multiplicity="0..1" />
+    <End Role="GeoReferencia" Type="Self.GeoReferencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="GeoReferencia">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UsuarioEs__IdEst__5629CD9C">
+    <End Role="Estado" Type="Self.Estado" Multiplicity="0..1" />
+    <End Role="UsuarioEstado" Type="Self.UsuarioEstado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="UsuarioEstado">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UsuarioEs__IdUsu__5535A963">
+    <End Role="Usuario1" Type="Self.Usuario1" Multiplicity="1" />
+    <End Role="UsuarioEstado" Type="Self.UsuarioEstado" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario1">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="UsuarioEstado">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EderEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Estadoes" EntityType="Self.Estado" />
+    <EntitySet Name="GeoReferencias" EntityType="Self.GeoReferencia" />
+    <EntitySet Name="Usuario1" EntityType="Self.Usuario1" />
+    <EntitySet Name="UsuarioEstadoes" EntityType="Self.UsuarioEstado" />
+    <AssociationSet Name="FK__GeoRefere__IdEst__571DF1D5" Association="Self.FK__GeoRefere__IdEst__571DF1D5">
+      <End Role="Estado" EntitySet="Estadoes" />
+      <End Role="GeoReferencia" EntitySet="GeoReferencias" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UsuarioEs__IdEst__5629CD9C" Association="Self.FK__UsuarioEs__IdEst__5629CD9C">
+      <End Role="Estado" EntitySet="Estadoes" />
+      <End Role="UsuarioEstado" EntitySet="UsuarioEstadoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UsuarioEs__IdUsu__5535A963" Association="Self.FK__UsuarioEs__IdUsu__5535A963">
+      <End Role="Usuario1" EntitySet="Usuario1" />
+      <End Role="UsuarioEstado" EntitySet="UsuarioEstadoes" />
+    </AssociationSet>
+    <FunctionImport Name="EstadoAdd">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Abreviacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="EstadoDelete">
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EstadoGetAll" ReturnType="Collection(EderModel.EstadoGetAll_Result)" />
+    <FunctionImport Name="EstadoGetById" ReturnType="Collection(EderModel.EstadoGetById_Result)">
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EstadoUpdate">
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Abreviacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GeoReferenciaAdd">
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+      <Parameter Name="Latitud" Mode="In" Type="Decimal" />
+      <Parameter Name="Longitud" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GeoReferenciaDelete">
+      <Parameter Name="IdGeoReferencia" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GeoReferenciaGetAll" ReturnType="Collection(EderModel.GeoReferenciaGetAll_Result)" />
+    <FunctionImport Name="GeoReferenciaGetById" ReturnType="Collection(EderModel.GeoReferenciaGetById_Result)">
+      <Parameter Name="IdGeoReferencia" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GeoReferenciaUpdate">
+      <Parameter Name="IdGeoReferencia" Mode="In" Type="Int32" />
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+      <Parameter Name="Latitud" Mode="In" Type="Decimal" />
+      <Parameter Name="Longitud" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="Usuario1Add">
+      <Parameter Name="Contraseña" Mode="In" Type="String" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="FechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="RFC" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Usuario1Delete">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Usuario1GetAll" ReturnType="Collection(EderModel.Usuario1GetAll_Result)" />
+    <FunctionImport Name="Usuario1GetById" ReturnType="Collection(EderModel.Usuario1GetById_Result)">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Usuario1Update">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+      <Parameter Name="Contraseña" Mode="In" Type="String" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="FechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="RFC" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UsuarioEstadoAdd">
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UsuarioEstadoDelete">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UsuarioEstadoGetAll" ReturnType="Collection(EderModel.UsuarioEstadoGetAll_Result)" />
+    <FunctionImport Name="UsuarioEstadoGetById" ReturnType="Collection(EderModel.UsuarioEstadoGetById_Result)">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UsuarioEstadoUpdate">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+      <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="EstadoGetAll_Result">
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Abreviacion" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="EstadoGetById_Result">
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Abreviacion" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="GeoReferenciaGetAll_Result">
+    <Property Type="Int32" Name="IdGeoReferencia" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="true" />
+    <Property Type="Decimal" Name="Latitud" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="Longitud" Nullable="true" Precision="18" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="GeoReferenciaGetById_Result">
+    <Property Type="Int32" Name="IdGeoReferencia" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="true" />
+    <Property Type="Decimal" Name="Latitud" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="Longitud" Nullable="true" Precision="18" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="Usuario1GetAll_Result">
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="String" Name="Contraseña" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaNacimiento" Nullable="true" />
+    <Property Type="String" Name="RFC" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="Usuario1GetById_Result">
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="String" Name="Contraseña" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaNacimiento" Nullable="true" />
+    <Property Type="String" Name="RFC" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="UsuarioEstadoGetAll_Result">
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="UsuarioEstadoGetById_Result">
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="true" />
+  </ComplexType>
+</Schema>
